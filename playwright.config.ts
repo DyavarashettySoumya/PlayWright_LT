@@ -27,7 +27,7 @@ export default defineConfig({
   use: {
     /* Base URL to use in actions like `await page.goto('/')`. */
     // baseURL: 'http://127.0.0.1:3000',
-headless:false,
+headless:true,
     /* Collect trace when retrying the failed test. See https://playwright.dev/docs/trace-viewer */
     trace: 'on-first-retry',
   },
@@ -38,6 +38,7 @@ headless:false,
       name: 'chromium',
       use: { ...devices['Desktop Chrome'] },
     },
+    
 
     // {
     //   name: 'firefox',
@@ -69,6 +70,7 @@ headless:false,
     //   use: { ...devices['Desktop Chrome'], channel: 'chrome' },
     // },
   ],
+  
 
   /* Run your local dev server before starting the tests */
   // webServer: {
