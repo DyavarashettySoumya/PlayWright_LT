@@ -1,0 +1,41 @@
+username:soumya@azkasurvey.com
+password:aY2vKLEh
+
+npm init playwright@latest
+add extension for the project (playwright for the VS Code) one done you can see the symbol
+then add the "headless:false," in the playwright.config.ts file in "use" block after two lines
+"Headless" mean we cant see the execution-it will happen at background
+"above line is for we can see the execution while executing the cases"
+
+
+selenium--within the time elements are not reacting while regression
+playWright--a bit faster while reacting the elements
+=>playwright will wait inbuily 30sec while finding the elements,and it will show the error message in code itself 
+=>cross browser testing is there no need to write the code(inbuilt feature is there)
+-------------------test case template-----------------
+/*
+test('test case title',async({page})=>{
+//page=mean no need to mention any browser
+//async--inbuilt wait method
+test steps
+
+})
+*/
+
+--------------------locators----------------
+using attribute
+[attribute='attributeValue']
+-------------------xpath implementation------------
+xpath by the value----------------//tagname[@value='1']
+xpath by the attribute name-------//tagname[@attribute='attributeValue']
+------------if the values are changes simultaniously then follow below xpath type--------
+----parent and child tags---
+//tagname[@attribute='attributeValue']//following-sibling:td[6]
+//td[@headers='attributeValue']//following-sibling:td[6]
+
+
+------------------------------soft and Hard assersion-----------------
+soft--->TC should should thrown an error message in cosole(try/catch method)
+compile will not stop
+Hard--->when the test case fail it is called hard assersion(expect method)
+hear complier will stop the execution
