@@ -58,15 +58,15 @@ export class personalDetailsPage{
             await this.page.waitForTimeout(2000);
        
             //---------------scroll page
-            await this.page.saveAndProceedButton.scrollIntoViewIfNeeded()
-            await this.page.waitForTimeout(2000);
+            // await this.page.saveAndProceedButton.scrollIntoViewIfNeeded()
+            // await this.page.waitForTimeout(2000);
             //-----------------------highlight
-            await this.page.saveAndProceedButton.highlight()
-            await this.page.waitForTimeout(2000);
+            // await this.page.saveAndProceedButton.highlight()
+            // await this.page.waitForTimeout(2000);
             //---------------------mousehover
-            await this.page.saveAndProceedButton.hover()
-            await this.page.waitForTimeout(2000);
-            await this.page.saveAndProceedButton.click()
+            // await this.page.saveAndProceedButton.hover()
+            // await this.page.waitForTimeout(2000);
+            // await this.page.saveAndProceedButton.click()
            //  await page.waitForTimeout(3000);
 
         }catch(error){
